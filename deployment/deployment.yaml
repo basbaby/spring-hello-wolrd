@@ -21,6 +21,6 @@ spec:
       - image: kiranbabycontainer.azurecr.io/kiranrepo:newproject
         name: kiranbabycontainer
         resources: {}
-      imagePullSecrets: 
+    - imagePullSecrets: 
         name: randomsecret111
 status: {}
