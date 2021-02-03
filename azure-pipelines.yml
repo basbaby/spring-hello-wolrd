@@ -29,3 +29,7 @@ steps:
       command: 'buildAndPush'
       Dockerfile: 'Dockerfile'
       tags: '$(dockerTag)'
+  - task: PublishPipelineArtifact@1
+    inputs:
+    targetPath: $(System.DefaultWorkingDirectory)
+    artifact: 'drop'   
