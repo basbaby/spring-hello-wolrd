@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: newproject
+  name: newproject
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newproject
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: newwest
+    spec:
+      containers:
+      - image: kiranbabycontainer.azurecr.io/kiranrepo:newproject
+        name: kiranbabycontainer
+        resources: {}
+status: {}
